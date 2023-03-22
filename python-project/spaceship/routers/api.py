@@ -9,7 +9,9 @@ def hello_world() -> dict:
         "name": "Nikita",
         "second_name": "Petrykin",
         "age": 19,
-        "hobby": ["Powerlifting", "Volleyball", "Biking"]
+        "hobby": ["Powerlifting", "Volleyball", "Biking"],
+        "faculty": "Faculty of Informatics and Computer Engineering",
+        "group": "IM-12"
     }
-    
+
     return data
