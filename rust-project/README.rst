@@ -27,6 +27,7 @@ Build the project with the following command:
 When you have the project built, you can run it by invoking the binary:
 
 .. code-block:: console
+
   $ ./target/debug/rust-project
   
   Listening on http://0.0.0.0:8080
