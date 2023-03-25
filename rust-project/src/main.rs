@@ -34,10 +34,10 @@ fn handle_client(mut stream: TcpStream) {
 
 
 fn main() {
-    let listener = TcpListener::bind("127.0.0.1:8080")
+    let listener = TcpListener::bind("0.0.0.0:8080")
         .expect("Failed to start server. Try a different port");
 
-    println!("Listening on http://127.0.0.1:8080");
+    println!("Listening on http://0.0.0.0:8080...");
 
     for stream in listener.incoming() {
         match stream {
