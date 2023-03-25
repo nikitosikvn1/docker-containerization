@@ -20,7 +20,7 @@ COPY . .
 
 RUN cargo build --target x86_64-unknown-linux-musl --release
 
-FROM gcr.io/distroless/cc-debian11:latest
+FROM scratch
 
 COPY --from=builder /app/target/x86_64-unknown-linux-musl/release/rust-project /
 
